@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void print(string name, int age){
+    if (age<0){
+        return;
+    }
+    cout<<name<<" "<<age<<endl;
+    return print(name, age-1);
+}
+int main(){
+    string name;
+    int age;
+    cout<<"enter your name: ";
+    cin>>name;
+    cout<<"enter your age: ";
+    cin>>age;
+    print(name, age);
+    return 0;
+}
+
+
+
+
